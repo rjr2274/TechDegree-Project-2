@@ -156,3 +156,65 @@ figure {
   color: #fff;
   display: inline-block;
 }
+
+/*****************************************
+******        Clear Fix         *********/
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/*****************************************
+******        Media Queries     *********/
+
+@media (min-width: 768px) {
+
+    .content_wrap {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .project_page {
+      max-width: 50%;
+      float: left;
+    }
+
+    .footer_wrap {
+      margin: 10px;
+    }
+
+    .main-nav li {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .main-nav a {
+      background: Dodgerblue;
+    }
+
+    .profile_picture {
+      float: right;
+      margin: 1em 2em 0 0;
+      max-width: 30%;
+    }
+
+    .about {
+      padding-right: 300px;
+      padding-top: 1.5em;
+      text-align: left;
+    }
+
+    .contact_caption {
+      padding: 0 5em 1.2em;
+    }
+
+    .footer_wrap {
+      margin: 0 auto;
+    }
+
+    .top_link {
+      display: none;
+    }
+}
