@@ -144,6 +144,7 @@ figure {
 }
 
 .top_link {
+  display: inline-block;
   float: right;
 }
 
@@ -155,6 +156,10 @@ figure {
 .footer_link {
   color: #fff;
   display: inline-block;
+}
+
+.footer_list {
+  display: none;
 }
 
 /*****************************************
@@ -172,8 +177,8 @@ figure {
 @media (min-width: 768px) {
 
     .content_wrap {
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .project_page {
@@ -217,4 +222,90 @@ figure {
     .top_link {
       display: none;
     }
+
+    .footer_list {
+      display: inline-block;
+    }
+
+    .footer_list a {
+      text-decoration: none;
+    }
+
+    .footer_list {
+      list-style: none;
+      float: right;
+    }
+
+    .footer_list li {
+      display: inline-block;
+      padding: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+  .content_wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    font-size: 1.5em;
+    float: left;
+    margin: .2em 1em;
+  }
+
+  .main-nav {
+    font-size: .7em;
+    float: right;
+    margin: 2em;
+    padding: 0;
+  }
+
+  .profile_picture {
+    float: right;
+    margin: 0;
+    max-width: 40%;
+    margin-top: 2em;
+    margin-right: 3em;
+    margin-bottom: 2em;
+  }
+
+  .about {
+    clear: left;
+    max-width: 50%;
+    margin-top: 10px;
+  }
+
+  .content_wrap {
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .project_page {
+    max-width: 33.333%;
+    float: left;
+    margin-bottom: 3em;
+  }
+
+  .sub_titles {
+    font-size: 1.2em;
+  }
+
+  .contact_caption {
+    padding: 0 10em 2em;
+  }
+
+  .captions {
+    font-size: .8em;
+  }
+
+  .titles {
+    font-size: 1.5em;
+  }
+
+  .contact {
+    font-size: 1.5em;
+  }
+
 }
