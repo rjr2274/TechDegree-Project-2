@@ -78,6 +78,31 @@ a:visited {
   padding-bottom: 2em;
 }
 
+.skillslist {
+  color: #fff;
+  text-align: left;
+  padding-left: 2em;
+  margin-top: 0;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: hotpink;
+}
+
 /*****************************************
 ******        Content Panel         *********/
 
@@ -148,6 +173,10 @@ figure {
   float: right;
 }
 
+.top_link a {
+  text-decoration: none;
+}
+
 .footer_wrap {
   margin: 0 auto;
   width: 90%;
@@ -176,8 +205,20 @@ figure {
 
 @media (min-width: 768px) {
 
+    .name {
+      font-size: 2em;
+      padding-bottom: 0;
+    }
+
+    .main-nav {
+      font-size: .65em;
+    }
+
+    .titles {
+      font-size: 1.3em;
+    }
+
     .content_wrap {
-      padding-left: 10px;
       padding-right: 10px;
     }
 
@@ -208,7 +249,12 @@ figure {
     .about {
       padding-right: 300px;
       padding-top: 1.5em;
+      padding-bottom: 5em;
       text-align: left;
+    }
+
+    .contact {
+      font-size: 1.5em;
     }
 
     .contact_caption {
@@ -239,6 +285,25 @@ figure {
     .footer_list li {
       display: inline-block;
       padding: 5px;
+    }
+
+    .sub_titles {
+      font-size: 1.3em;
+    }
+
+    .captions {
+      font-size: 1em;
+    }
+
+    .skillslist {
+      float: left;
+    }
+
+    .skills {
+      float: left;
+      margin-top: 0;
+      margin-bottom: 2em;
+      margin-left: 2em;
     }
 }
 
